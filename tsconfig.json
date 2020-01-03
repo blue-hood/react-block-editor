@@ -8,6 +8,7 @@
     "moduleResolution": "node",
     "outDir": "dist",
     "pretty": true,
+    "sourceMap": true,
     "strict": true
   },
   "include": ["src/**/*"],

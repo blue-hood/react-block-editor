@@ -7,8 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "fix": "eslint --fix '**/*.{js,jsx,ts,tsx}' && prettier --write '**/*.{json,md,yml}'",
-    "test": "tsc --noEmit && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{json,md,yml}'"
+    "dev": "webpack-dev-server",
+    "fix": "eslint --fix '**/*.{js,jsx,ts,tsx}' && prettier --write '**/*.{html,json,md,yml}'",
+    "test": "tsc --noEmit && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{html,json,md,yml}'"
   },
   "devDependencies": {
     "@types/react": "^16.9.17",
@@ -23,7 +24,11 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.4"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
     "react": "^16.12.0"

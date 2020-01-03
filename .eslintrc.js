@@ -19,6 +19,7 @@ module.exports = {
           ".tsx"
         ]
       }
-    ]
+    ],
+    "comma-dangle": ["error", "never"],
   }
 };
