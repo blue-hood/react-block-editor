@@ -10,6 +10,15 @@ module.exports = {
     'airbnb'
   ],
   rules: {
-    '@typescript-eslint/indent': false
+    '@typescript-eslint/indent': "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ]
   }
 };
