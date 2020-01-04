@@ -9,8 +9,22 @@ module.exports = {
     'plugin:prettier/recommended',
     'airbnb'
   ],
+  settings: {
+    "import/resolver": "webpack"
+  },
   rules: {
     '@typescript-eslint/indent': "off",
+    "@typescript-eslint/explicit-function-return-type": 'off',
+    "comma-dangle": ["error", "never"],
+    "import/extensions": [
+      "error",
+      {
+        ".js": "never",
+        ".jsx": "never",
+        ".ts": "never",
+        ".tsx": "never"
+      }
+    ],
     "react/jsx-filename-extension": [
       "error",
       {
@@ -20,6 +34,6 @@ module.exports = {
         ]
       }
     ],
-    "comma-dangle": ["error", "never"],
+    "react/prop-types": "off",
   }
 };
