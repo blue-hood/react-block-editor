@@ -1,4 +1,5 @@
 import React from 'react';
+import ParagraphBlock from './ParagraphBlock';
 import { BlockContent } from '../..';
 
 const App: React.FunctionComponent = () => (
@@ -9,17 +10,21 @@ const App: React.FunctionComponent = () => (
         props: {
           children: [
             {
-              type: 'TestBlock',
-              props: {}
+              type: 'ParagraphBlock',
+              props: {
+                text: 'A'
+              }
             },
             {
-              type: 'TestBlock',
-              props: {}
+              type: 'ParagraphBlock',
+              props: {
+                text: 'B'
+              }
             }
           ]
         }
       }}
-      map={{ TestBlock: () => <>TestBlock</> }}
+      map={{ ParagraphBlock }}
     />
   </>
 );

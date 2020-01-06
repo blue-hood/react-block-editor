@@ -5,7 +5,7 @@ interface BlockContent<type extends string, Props = {}> {
   props: Props;
 }
 
-export type BlockMap = { [key: string]: React.FunctionComponent };
+export type BlockMap = { [key: string]: React.FunctionComponent<any> };
 
 export interface RootBlockProps {
   children: BlockContent<string>[];
@@ -15,14 +15,14 @@ export interface RootBlockProps {
 export type BlockData = BlockContent<'RootBlock', Omit<RootBlockProps, 'map'>>;
 
 const RootBlock: React.FunctionComponent<RootBlockProps> = ({ children, map }) => (
-  <div>
+  <>
     {children.map(({ type, props }, index) => {
       const Block = map[type];
 
       // eslint-disable-next-line react/no-array-index-key, react/jsx-props-no-spreading
       return <Block {...props} key={index} />;
     })}
-  </div>
+  </>
 );
 
 export default RootBlock;
