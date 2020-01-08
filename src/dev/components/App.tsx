@@ -1,32 +1,33 @@
 import React from 'react';
-import ParagraphBlock from './ParagraphBlock';
-import { BlockContent } from '../..';
+import BlockContent from './BlockContent';
+import BlockContext, { map } from '../contexts/BlockContext';
 
 const App: React.FunctionComponent = () => (
-  <>
-    <BlockContent
-      data={{
-        type: 'RootBlock',
-        props: {
-          children: [
-            {
-              type: 'ParagraphBlock',
-              props: {
-                text: 'A'
+  <BlockContext.Provider value={{ map }}>
+    <BlockContent>
+      {[
+        {
+          type: 'ParagraphBlock',
+          props: {
+            children: [
+              {
+                type: 'TextBlock',
+                props: {
+                  text: 'TEST1'
+                }
+              },
+              {
+                type: 'TextBlock',
+                props: {
+                  text: 'TEST2'
+                }
               }
-            },
-            {
-              type: 'ParagraphBlock',
-              props: {
-                text: 'B'
-              }
-            }
-          ]
+            ]
+          }
         }
-      }}
-      map={{ ParagraphBlock }}
-    />
-  </>
+      ]}
+    </BlockContent>
+  </BlockContext.Provider>
 );
 
 export default App;
