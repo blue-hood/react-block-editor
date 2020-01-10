@@ -6,6 +6,6 @@ export const map = {
   TextBlock
 };
 
-const BlockContext = createBlockContext<typeof map>(map);
+const BlockContext = createBlockContext(map);
 
 export default BlockContext;

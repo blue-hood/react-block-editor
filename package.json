@@ -9,9 +9,11 @@
     "build": "tsc",
     "dev": "webpack-dev-server",
     "fix": "eslint --fix '**/*.{js,jsx,ts,tsx}' && prettier --write '**/*.{html,json,md,yml}'",
-    "test": "tsc --noEmit && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{html,json,md,yml}'"
+    "test": "jest && tsc --noEmit && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{html,json,md,yml}'"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.0.25",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
@@ -25,7 +27,9 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "jest": "^24.9.0",
     "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.4",
     "webpack": "^4.41.5",

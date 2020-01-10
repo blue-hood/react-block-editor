@@ -1,0 +1,1 @@
+{"version":3,"file":"createBlockContext.js","sourceRoot":"","sources":["../../src/contexts/createBlockContext.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAM1B,MAAM,CAAC,OAAO,UAAU,kBAAkB,CAAI,UAAa;IACzD,OAAO,KAAK,CAAC,aAAa,CAAkB,EAAE,GAAG,EAAE,UAAU,EAAE,CAAC,CAAC;AACnE,CAAC"}
