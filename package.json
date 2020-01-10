@@ -1,8 +1,8 @@
 {
-  "name": "react-block-editor",
+  "name": "react-typeblock",
   "version": "0.0.0",
   "main": "dist/index.js",
-  "repository": "https://github.com/blue-hood/react-block-editor",
+  "repository": "https://github.com/blue-hood/react-typeblock",
   "author": "Hata <hato6502@gmail.com>",
   "license": "MIT",
   "scripts": {
