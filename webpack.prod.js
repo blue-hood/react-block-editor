@@ -6,6 +6,8 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: 'index.js'
+    filename: 'index.js',
+    library: 'ReactTypeblock',
+    libraryTarget: 'umd'
   }
 });

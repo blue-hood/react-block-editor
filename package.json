@@ -1,10 +1,10 @@
 {
   "name": "react-typeblock",
   "version": "0.0.0",
-  "main": "dist/index.js",
   "repository": "https://github.com/blue-hood/react-typeblock",
-  "author": "Hata <hato6502@gmail.com>",
   "license": "MIT",
+  "author": "Hata <hato6502@gmail.com>",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
@@ -26,6 +26,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1",
+    "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.4",
@@ -34,7 +35,7 @@
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.12.0"
   }
 }
