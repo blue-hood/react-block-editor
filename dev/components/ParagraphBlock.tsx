@@ -1,6 +1,6 @@
 import React from 'react';
 import BlockContext, { map } from '../contexts/BlockContext';
-import { BlockNodeBase, useBlockContent, TextBlockProps } from '../..';
+import { BlockNodeBase, useBlockContent, TextBlockProps } from '../../src';
 
 type BlockNode = BlockNodeBase<'TextBlock', TextBlockProps>;
 

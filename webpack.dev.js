@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'development',
-  entry: './src/dev/index.tsx',
+  entry: './dev/index.tsx',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: 'public',
