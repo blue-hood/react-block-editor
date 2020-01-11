@@ -10,7 +10,11 @@ module.exports = {
     'airbnb'
   ],
   settings: {
-    "import/resolver": "webpack"
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.common.js"
+      }
+    }
   },
   rules: {
     '@typescript-eslint/indent': "off",

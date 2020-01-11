@@ -1,6 +1,4 @@
 module.exports = {
-  mode: 'development',
-  entry: './src/dev/index.tsx',
   module: {
     rules: [
       {
@@ -11,10 +9,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx']
-  },
-  devServer: {
-    contentBase: 'public',
-    hot: true,
-    open: true
   }
 };

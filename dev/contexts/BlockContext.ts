@@ -1,4 +1,4 @@
-import { createBlockContext, TextBlock } from '../..';
+import { createBlockContext, TextBlock } from '../../src';
 import ParagraphBlock from '../components/ParagraphBlock';
 
 export const map = {

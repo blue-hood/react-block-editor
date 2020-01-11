@@ -1,6 +1,6 @@
 import BlockContext, { map } from '../contexts/BlockContext';
 import { ParagraphBlockProps } from './ParagraphBlock';
-import { TextBlockProps, BlockNodeBase, useBlockContent } from '../..';
+import { TextBlockProps, BlockNodeBase, useBlockContent } from '../../src';
 
 type BlockNode =
   | BlockNodeBase<'ParagraphBlock', ParagraphBlockProps>
