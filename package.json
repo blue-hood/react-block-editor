@@ -1,6 +1,11 @@
 {
   "name": "react-typeblock",
   "version": "0.0.5",
+  "keywords": [
+    "block",
+    "react",
+    "typescript"
+  ],
   "repository": "https://github.com/blue-hood/react-typeblock",
   "license": "MIT",
   "author": "Hata <hato6502@gmail.com>",
