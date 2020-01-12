@@ -5,6 +5,14 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
+  },
   output: {
     filename: 'index.js',
     library: 'ReactTypeblock',
