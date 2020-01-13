@@ -1,8 +1,8 @@
 # react-typeblock
 
-[![npm version](https://badge.fury.io/js/react-typeblock.svg)](https://badge.fury.io/js/react-typeblock)
-
 Render React elements from typed object.
+
+[![npm version](https://badge.fury.io/js/react-typeblock.svg)](https://badge.fury.io/js/react-typeblock)
 
 ## Demo
 
