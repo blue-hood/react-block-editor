@@ -1,9 +1,11 @@
-import { createBlockContext, TextBlock } from '../../src';
-import ParagraphBlock from '../components/ParagraphBlock';
+import { createBlockContext, Text } from '../../src';
+import Container from '../components/Container';
+import Paragraph from '../components/Paragraph';
 
 export const map = {
-  ParagraphBlock,
-  TextBlock
+  Container,
+  Paragraph,
+  Text
 };
 
 const BlockContext = createBlockContext<typeof map>(map);
