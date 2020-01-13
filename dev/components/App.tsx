@@ -7,19 +7,19 @@ const App: React.FunctionComponent = () => (
     <BlockContent>
       {[
         {
-          type: 'ParagraphBlock',
+          type: 'Paragraph',
           props: {
             name: 'Paragraph1',
             color: 'pink',
             children: [
               {
-                type: 'TextBlock',
+                type: 'Text',
                 props: { text: 'Text1' }
               }
               // Uncomment it, then occurs TypeScript error
               // because paragraph can't be rendered in paragraph.
               /* {
-                type: "ParagraphBlock",
+                type: "Paragraph",
                 props: {
                   name: "Invalid Paragraph",
                   color: "white",
@@ -30,32 +30,32 @@ const App: React.FunctionComponent = () => (
           }
         },
         {
-          type: 'ContainerBlock',
+          type: 'Container',
           props: {
             name: 'Container1',
             color: 'lightgray',
             children: [
               {
-                type: 'ContainerBlock',
+                type: 'Container',
                 props: {
                   name: 'Container2',
                   color: 'lightblue',
                   children: [
                     {
-                      type: 'TextBlock',
+                      type: 'Text',
                       props: { text: 'Text2' }
                     }
                   ]
                 }
               },
               {
-                type: 'ContainerBlock',
+                type: 'Container',
                 props: {
                   name: 'Container3',
                   color: 'lightgreen',
                   children: [
                     {
-                      type: 'ContainerBlock',
+                      type: 'Container',
                       props: {
                         name: 'Container4',
                         color: 'pink',
@@ -63,13 +63,13 @@ const App: React.FunctionComponent = () => (
                       }
                     },
                     {
-                      type: 'ContainerBlock',
+                      type: 'Container',
                       props: {
                         name: 'Container5',
                         color: 'lightyellow',
                         children: [
                           {
-                            type: 'TextBlock',
+                            type: 'Text',
                             props: { text: 'Text3' }
                           }
                         ]

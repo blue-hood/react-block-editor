@@ -1,20 +1,16 @@
 import React from 'react';
-import { BlockNodeBase, useBlockContent, TextBlockProps } from '../../src';
+import { BlockNodeBase, useBlockContent, TextProps } from '../../src';
 import BlockContext, { map } from '../contexts/BlockContext';
 
-type BlockNode = BlockNodeBase<'TextBlock', TextBlockProps>;
+type BlockNode = BlockNodeBase<'Text', TextProps>;
 
-export interface ParagraphBlockProps {
+export interface ParagraphProps {
   children: BlockNode[];
   color: string;
   name: string;
 }
 
-const ParagraphBlock: React.FunctionComponent<ParagraphBlockProps> = ({
-  children,
-  color,
-  name
-}) => {
+const Paragraph: React.FunctionComponent<ParagraphProps> = ({ children, color, name }) => {
   const BlockContent = useBlockContent<BlockNode, typeof map>(BlockContext);
 
   return (
@@ -26,4 +22,4 @@ const ParagraphBlock: React.FunctionComponent<ParagraphBlockProps> = ({
   );
 };
 
-export default ParagraphBlock;
+export default Paragraph;
