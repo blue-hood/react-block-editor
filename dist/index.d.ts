@@ -1,4 +1,4 @@
 import useBlockContent, { BlockNodeBase } from './hooks/useBlockContent';
-import TextBlock, { TextBlockProps } from './components/TextBlock';
+import Text, { TextProps } from './components/Text';
 import createBlockContext from './contexts/createBlockContext';
-export { BlockNodeBase, createBlockContext, TextBlock, TextBlockProps, useBlockContent };
+export { BlockNodeBase, createBlockContext, Text, TextProps, useBlockContent };
