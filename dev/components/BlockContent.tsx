@@ -1,8 +1,10 @@
-import BlockContext, { map } from '../contexts/BlockContext';
-import { ParagraphBlockProps } from './ParagraphBlock';
 import { TextBlockProps, BlockNodeBase, useBlockContent } from '../../src';
+import { ContainerBlockProps } from './ContainerBlock';
+import { ParagraphBlockProps } from './ParagraphBlock';
+import BlockContext, { map } from '../contexts/BlockContext';
 
 type BlockNode =
+  | BlockNodeBase<'ContainerBlock', ContainerBlockProps>
   | BlockNodeBase<'ParagraphBlock', ParagraphBlockProps>
   | BlockNodeBase<'TextBlock', TextBlockProps>;
 
