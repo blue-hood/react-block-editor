@@ -11,10 +11,12 @@
   "author": "Hata <hato6502@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "rm -r dist && webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "fix": "eslint --fix '**/*.{js,jsx,ts,tsx}' && prettier --write '**/*.{html,json,md,yml}'",
-    "test": "tsc --noEmit && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{html,json,md,yml}'"
+    "eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "fix": "yarn eslint --fix && yarn prettier --write",
+    "prettier": "prettier '**/*.{html,json,md,yml}'",
+    "test": "yarn build && git diff --exit-code dist && tsc --noEmit && yarn eslint && yarn prettier --check"
   },
   "devDependencies": {
     "@types/react": "^16.9.17",
